@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSPhotoCollectionViewCell" customModule="FlickrSearcher" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="yRy-qm-GWU" id="rkD-Dd-uJ9"/>
+                <outlet property="imageView" destination="x0A-Zt-0Hi" id="fYm-0m-SLr"/>
+                <outlet property="publishDateLabel" destination="Jjl-xf-0B1" id="xBu-qK-48I"/>
+                <outlet property="titleLabel" destination="mHn-Vq-chd" id="oMX-Dr-z95"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yRy-qm-GWU">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x0A-Zt-0Hi">
+                    <rect key="frame" x="0.0" y="0.0" width="159" height="217"/>
+                </imageView>
+                <stackView opaque="NO" alpha="0.75" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s5U-rj-bNc">
+                    <rect key="frame" x="0.0" y="185.5" width="159" height="31.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHn-Vq-chd">
+                            <rect key="frame" x="0.0" y="0.0" width="159" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jjl-xf-0B1">
+                            <rect key="frame" x="0.0" y="17" width="159" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x0A-Zt-0Hi" secondAttribute="trailing" id="0u2-gC-GY5"/>
+                <constraint firstItem="x0A-Zt-0Hi" firstAttribute="leading" secondItem="yRy-qm-GWU" secondAttribute="leading" id="HSX-yF-8xJ"/>
+                <constraint firstItem="qfq-xE-ooq" firstAttribute="bottom" secondItem="x0A-Zt-0Hi" secondAttribute="bottom" id="KIQ-lP-Nj5"/>
+                <constraint firstItem="qfq-xE-ooq" firstAttribute="bottom" secondItem="s5U-rj-bNc" secondAttribute="bottom" id="SQY-OF-PXt"/>
+                <constraint firstItem="s5U-rj-bNc" firstAttribute="leading" secondItem="qfq-xE-ooq" secondAttribute="leading" id="SYd-co-jvo"/>
+                <constraint firstItem="x0A-Zt-0Hi" firstAttribute="top" secondItem="qfq-xE-ooq" secondAttribute="top" id="c4h-z3-5Bw"/>
+                <constraint firstItem="qfq-xE-ooq" firstAttribute="trailing" secondItem="s5U-rj-bNc" secondAttribute="trailing" id="kfR-CK-Tm4"/>
+                <constraint firstItem="s5U-rj-bNc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qfq-xE-ooq" secondAttribute="top" priority="250" id="ou6-fb-f5a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="qfq-xE-ooq"/>
+            <point key="canvasLocation" x="-209.5" y="390.5"/>
+        </view>
+    </objects>
+</document>
